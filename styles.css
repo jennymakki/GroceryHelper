@@ -1,27 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7; 
+    color: #333;
+    box-sizing: border-box;
+}
+
+
+header {
+    background: linear-gradient(to right, #0e5b19, #5d8955);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
 }
 
 h1 {
-    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
 }
 
 #recipeList {
-    margin: 20px 0;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button {
+label {
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 5px 0;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #4c7744;
+}
+
+#viewIngredientsButton {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background: #4c7744;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#viewIngredientsButton:hover {
+    background: #4c7744;
+    transform: scale(1.05);
+}
+
+#viewIngredientsButton:active {
+    transform: scale(1);
 }
 
 #ingredientsList {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; 
+    font-size: 1rem;
+}
+
+#ingredientsList ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#ingredientsList li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#ingredientsList.show {
+    display: block;
+    animation: fadeIn 1s ease-out;
+}
+
+.viewRecipeLink {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 16px; 
+    margin-left: 8px; 
+}
+
+.viewRecipeLink:hover {
+    color: #2980b9;
+}
+
+.viewRecipeLink i {
+    font-size: 18px; 
+    vertical-align: middle; 
 }

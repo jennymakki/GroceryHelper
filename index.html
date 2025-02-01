@@ -5,39 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GroceryHelper</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
     <h1>GroceryHelper</h1>
+</header>
 
     <div id="recipeList">
-        <label><input type="checkbox" id="recipe1"> Köttfärssås</label><br>
+        <label><input type="checkbox" id="recipe1"> Köttfärssås<a href="https://www.kokaihop.se/recept/kottfarssas-11" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
         <label><input type="checkbox" id="recipe2"> Tacos</label><br>
-        <label><input type="checkbox" id="recipe3"> Pulled Pork</label><br>
-        <label><input type="checkbox" id="recipe4"> Röd pestokyckling med oliver</label><br>
-        <label><input type="checkbox" id="recipe5"> Kikärtswrap med dillig majonnäs</label><br>
-        <label><input type="checkbox" id="recipe6"> Tuna Melt</label><br>
-        <label><input type="checkbox" id="recipe7"> Köttfärslimpa</label><br>
-        <label><input type="checkbox" id="recipe8"> Pizza</label><br>
-        <label><input type="checkbox" id="recipe9"> Pan Pizza</label><br>
-        <label><input type="checkbox" id="recipe10"> Garlic Butter Roast Chicken</label><br>
-        <label><input type="checkbox" id="recipe11"> Chorizopasta</label><br>
-        <label><input type="checkbox" id="recipe12"> Korvstroganoff</label><br>
-        <label><input type="checkbox" id="recipe13"> Fetaostbiffar</label><br>
+        <label><input type="checkbox" id="recipe3"> Pulled Pork<a href="https://www.landleyskok.se/recept/sa-enkelt-ar-det-att-gora-pulled-pork" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe4"> Röd pestokyckling med oliver<a href="https://www.56kilo.se/rod-pestokyckling-med-oliver/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe5"> Kikärtswrap med dillig majonnäs<a href="https://www.citygross.se/vegetariskt/kik%C3%A4rtswrap-med-dillig-majonn%C3%A4ss%C3%A5s-r42112" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe6"> Tuna Melt<a href="https://www.koket.se/het-tuna-melt" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe7"> Köttfärslimpa<a href="https://sv.stories.newsner.com/smak/kottfarslimpa/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe8"> Pizza<a href="https://www.ica.se/recept/pizzadeg-258023/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a><a href="https://receptfavoriter.se/recept/pizzasas" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe9"> Pan Pizza<a href="https://www.seriouseats.com/foolproof-pan-pizza-recipe" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe10"> Garlic Butter Roast Chicken<a href="https://www.spendwithpennies.com/roast-chicken/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe11"> Chorizopasta<a href="https://www.arla.se/recept/chorizopasta/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe12"> Korvstroganoff<a href="https://www.ica.se/recept/korvstroganoff-med-ris-533512/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe13"> Fetaostbiffar<a href="https://www.zeta.nu/recept/fetaostbiffar/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
         <label><input type="checkbox" id="recipe14"> Kebab</label><br>
-        <label><input type="checkbox" id="recipe15"> Club Sandwich</label><br>
-        <label><input type="checkbox" id="recipe16"> Pasta med krämig ost- och skinksås</label><br>
-        <label><input type="checkbox" id="recipe17"> Ost och skinkpaj</label><br>
-        <label><input type="checkbox" id="recipe18"> Kycklingfärsgryta</label><br>
+        <label><input type="checkbox" id="recipe15"> Club Sandwich<a href="https://www.ica.se/recept/club-sandwich-med-kyckling-och-currymajonnas-723309/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe16"> Pasta med krämig ost- och skinksås<a href="https://www.ica.se/recept/pasta-med-kramig-ost-och-skinksas-725815/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe17"> Ost och skinkpaj<a href="https://www.koket.se/ost-och-skinkpaj-med-krispig-sallad" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe18"> Kycklingfärsgryta<a href="https://www.citygross.se/f%C3%A4rs/gryta-med-svampstekt-f%C3%A4rs-r46731?portions=4" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
         <label><input type="checkbox" id="recipe19"> Pestolax med pasta</label><br>
-        <label><input type="checkbox" id="recipe20"> Citronlax med potatis</label><br>
+        <label><input type="checkbox" id="recipe20"> Citronlax med potatis<a href="https://www.recepten.se/recept/citronlax.html" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
         <label><input type="checkbox" id="recipe21"> Schnitzel med pommes</label><br>
-        <label><input type="checkbox" id="recipe22"> Carbonara</label><br>
-        <label><input type="checkbox" id="recipe23"> Lasagne</label><br>
-        <label><input type="checkbox" id="recipe24"> Wallenbergare</label><br>
+        <label><input type="checkbox" id="recipe22"> Carbonara<a href="https://www.zeta.nu/recept/pasta-carbonara/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe23"> Lasagne<a href="https://www.ica.se/recept/klassisk-lasagne-679675/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
+        <label><input type="checkbox" id="recipe24"> Wallenbergare<a href="https://recept.se/recept/wallenbergare-pa-kycklingfars" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
         <label><input type="checkbox" id="recipe25"> Hamburgare</label><br>
         <label><input type="checkbox" id="recipe26"> Korv med bröd</label><br>
         <label><input type="checkbox" id="recipe27"> Chicken drumsticks med pommes</label><br>
-        <label><input type="checkbox" id="recipe28"> Entrecôte med potatisgratäng</label><br>
+        <label><input type="checkbox" id="recipe28"> Entrecôte med potatisgratäng<a href="https://www.ica.se/recept/potatisgratang-grundrecept-721833/" target="_blank" class="viewRecipeLink"><i class="fas fa-external-link-alt"></i></a></label><br>
     </div>
 
     <button id="viewIngredientsButton">View Ingredients</button>
