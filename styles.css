@@ -60,11 +60,11 @@ label:hover {
     margin-top: 20px;
     transition: transform 0.3s ease, background 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 #viewIngredientsButton:hover {
     background: #4c7744;
-    transform: scale(1.05);
 }
 
 #viewIngredientsButton:active {

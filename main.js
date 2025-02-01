@@ -102,7 +102,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Korv med bröd',
-            ingredients: ['Korv', 'korvbröd', '500g pommes']
+            ingredients: ['6 grillkorv', '6 korvbröd', '500g pommes']
         },
         {
             name: 'Chicken drumsticks med pommes',
@@ -124,6 +124,11 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
                 // Extract quantity and ingredient name
                 let [quantity, ...nameParts] = ingredient.split(' ');
                 let name = nameParts.join(' '); // The ingredient name without quantity
+
+                // If no quantity is found or it's not a valid number, set quantity to 1
+                if (!quantity || isNaN(quantity.replace(/\D/g, ''))) {
+                    quantity = '1'; // Default to 1 for missing quantities
+                }
 
                 // If the ingredient already exists in the map, add the quantity
                 if (selectedIngredients.has(name)) {
@@ -148,10 +153,10 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
     ingredientsHTML += '</ul>';
 
     document.getElementById('ingredientsList').innerHTML = ingredientsHTML;
-    ingredientsList.innerHTML = ingredientsHTML;
 
     // Add fade-in effect
-    ingredientsList.classList.add('show');
+    document.getElementById('ingredientsList').classList.add('show');
 
-    ingredientsList.scrollIntoView({ behavior: 'smooth' });
+    // Scroll to the ingredients list
+    document.getElementById('ingredientsList').scrollIntoView({ behavior: 'smooth' });
 });
