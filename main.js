@@ -18,7 +18,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
          {
             name: 'Kikärtswrap med dillig majonnässås',
-            ingredients: ['460 g kikärtor', '40g tacokrydda', '1 snackpaprika', '0.5 gurka', '30g fryst/färsk dill', '1 dl majonnäs', '1 dl matyoghurt', 'tacobröd/libabröd',]
+            ingredients: ['460 g kikärtor', '40g tacokrydda', '1 snackpaprika', '1 gurka', '30g fryst/färsk dill', '1 dl majonnäs', '1 dl matyoghurt', 'tacobröd/libabröd',]
         },
         {
             name: 'Tuna Melt',
@@ -115,26 +115,37 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
     ];
     let selectedIngredients = new Map();
 
+    // Regular expression to match quantities (with or without units)
+    const quantityRegex = /^(\d+\.?\d*)([a-zA-Z]+)?/;
+
     // Loop through all the recipes and check if the corresponding checkbox is checked
     recipes.forEach((recipe, index) => {
         const checkbox = document.getElementById(`recipe${index + 1}`);
         if (checkbox && checkbox.checked) {
             // Loop through the ingredients of the selected recipe
             recipe.ingredients.forEach(ingredient => {
-                // Extract quantity and ingredient name
-                let [quantity, ...nameParts] = ingredient.split(' ');
-                let name = nameParts.join(' '); // The ingredient name without quantity
+                // Match the ingredient against the regex to extract quantity and name
+                const match = ingredient.match(quantityRegex);
+                
+                let quantity = '1';  // Default quantity if no quantity found
+                let name = ingredient;  // Default to whole ingredient if no match
+                
+                if (match) {
+                    // If a match is found, we extract the quantity and the name
+                    quantity = match[1];  // The number part of the quantity
+                    name = ingredient.replace(match[0], '').trim();  // The rest is the name
+                }
 
-                // If no quantity is found or it's not a valid number, set quantity to 1
-                if (!quantity || isNaN(quantity.replace(/\D/g, ''))) {
-                    quantity = '1'; // Default to 1 for missing quantities
+                // Check if name contains a number and remove it for consistency
+                if (/\d/.test(name)) {
+                    name = name.replace(/\d+/g, '').trim();  // Remove digits, keeping just the ingredient name
                 }
 
                 // If the ingredient already exists in the map, add the quantity
                 if (selectedIngredients.has(name)) {
                     // Get current quantity (assuming it's a valid number)
                     let currentQuantity = selectedIngredients.get(name);
-                    // Add the new quantity to the current one (assuming quantity is a valid number format)
+                    // Add the new quantity to the current one
                     let newQuantity = parseFloat(currentQuantity) + parseFloat(quantity);
                     selectedIngredients.set(name, newQuantity + ' ' + name);
                 } else {
@@ -157,6 +168,5 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
     // Add fade-in effect
     document.getElementById('ingredientsList').classList.add('show');
 
-    // Scroll to the ingredients list
     document.getElementById('ingredientsList').scrollIntoView({ behavior: 'smooth' });
 });
