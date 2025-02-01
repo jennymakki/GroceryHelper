@@ -122,3 +122,32 @@ label:hover {
     font-size: 18px; 
     vertical-align: middle; 
 }
+
+#downloadPdfButton {
+    display: block;            
+    width: 50%;                
+    padding: 15px;             
+    font-size: 1.2rem;       
+    background: #4c7744;     
+    color: white;           
+    border: none;              
+    border-radius: 8px;     
+    cursor: pointer;       
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;      
+    margin-top: 20px;      
+    
+}
+
+#downloadPdfButton:hover {
+    background: #3e6132;   
+    transform: translateY(-3px);
+}
+
+#downloadPdfContainer {
+    display: flex;
+    justify-content: center;    
+    align-items: center;             
+    margin: 1rem;           
+}

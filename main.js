@@ -2,19 +2,19 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
     const recipes = [
        {
             name: 'Köttfärssås',
-            ingredients: ['1kg spagetti', '1kg blandfärs', '1 gullök', '3 vitlöksklyftor', '3 tsk salt', '1 tsk paprikapulver', '500g krossade tomater', '4 msk tomatpuré', '2.5 dl matlagningsgrädde', '1 dl ketchup', '1.5tsk basilika', '1.5tsk oregano']
+            ingredients: ['1000g spagetti', '1000g blandfärs', '1 gullök', '3 vitlöksklyftor', '3 tsk salt', '1 tsk paprikapulver', '500g krossade tomater', '4 msk tomatpuré', '2.5 dl matlagningsgrädde', '1 dl ketchup', '1.5tsk basilika', '1.5tsk oregano']
         },
         {
             name: 'Tacos',
-            ingredients: ['Tacobröd', '500g nötfärs', 'Gurka', 'Paprika', '300g Riven ost', 'Tacosås', 'Tacokrydda', 'Avokado']
+            ingredients: ['Tacobröd', '500g nötfärs', 'gurka', 'Paprika', '300g Riven ost', 'Tacosås', 'Tacokrydda', 'Avokado']
         },
       {
             name: 'Pulled Pork',
-            ingredients: ['1 kg fläskkarré', '1 msk malen spiskummin', '1 msk rökt paprikapuler', '1 tsk chiliflakes', '0.5 tsk chilipulver', '2 tsk salt,', '1 msk socker', '3 vitlöksklyftor', '33cl mörk öl', '1 dl bbq-sås']
+            ingredients: ['1000g fläskkarré', '1 msk malen spiskummin', '1 msk rökt paprikapuler', '1 tsk chiliflakes', '0.5 tsk chilipulver', '2 tsk salt,', '1 msk socker', '3 vitlöksklyftor', '33cl mörk öl', '1 dl bbq-sås']
         },
         {
             name: 'Röd pestokyckling med oliver',
-            ingredients: ['1 kg kycklingfilé', '1 gullök', '4 dl grädde', '100g röd pesto', '2 vitlöksklyftor', '1 dl urkärnade oliver', '500g spagetti' ]
+            ingredients: ['1000g kycklingfilé', '1 gullök', '4 dl grädde', '100g röd pesto', '2 vitlöksklyftor', '1 dl urkärnade oliver', '500g spagetti' ]
         },
          {
             name: 'Kikärtswrap med dillig majonnässås',
@@ -26,7 +26,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
          {
             name: 'Köttfärslimpa',
-            ingredients: ['500g nötfärs', '2 msk ströbröd', '2 ägg', '0.5 tsk spiskummin', '100g ost', '1kg mospotatis']
+            ingredients: ['500g nötfärs', '2 msk ströbröd', '2 ägg', '0.5 tsk spiskummin', '100g ost', '1000g mospotatis']
         },
          {
             name: 'Pizza',
@@ -42,7 +42,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Chorizopasta',
-            ingredients: ['400g chorizofärs', '1 schalottenlök', '2 vitlöksklyftor', '1 röd paprika', '2 tomater', '1 msk tomatpuré', '2 dl creme fraiche', '1 msk strösocker', '100g riven ost', '500g pasta']
+            ingredients: ['400g chorizofärs', '1 schalottenlök', '2 vitlöksklyftor', '1 röd paprika', '2 tomat', '1 msk tomatpuré', '2 dl creme fraiche', '1 msk strösocker', '100g riven ost', '500g pasta']
         },
         {
             name: 'Korvstroganoff',
@@ -50,11 +50,11 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Fetaostbiffar',
-            ingredients: ['500g blandfärs', '1 ägg', '0.5 tsk timjan', '1 citron', '1 tsk salt', '1 förpackning fetaost', '0.5 gurka', '2 tomater', '1 rödlök', 'tapenad', '1kg potatis', 'tzatziki']
+            ingredients: ['500g blandfärs', '1 ägg', '0.5 tsk timjan', '1 citron', '1 tsk salt', '1 förpackning fetaost', '0.5 gurka', '2 tomat', '1 rödlök', 'tapenad', '1000g potatis', 'tzatziki']
         },
         {
             name: 'Kebab',
-            ingredients: ['En förpacking kebabkött', '1 rödlök', '0.5 gurka', '2 tomater', 'kebabbröd', 'kebabsås']
+            ingredients: ['En förpacking kebabkött', '1 rödlök', '0.5 gurka', '2 tomat', 'kebabbröd', 'kebabsås']
         },
         {
             name: 'Club Sandwich',
@@ -78,11 +78,11 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Citronlax med potatis',
-            ingredients: ['700g lax', '3krm citronpeppar', '0.5 tsk salt', '1 citron', '2 dl grädde', '1kg mospotatis']
+            ingredients: ['700g lax', '3krm citronpeppar', '0.5 tsk salt', '1 citron', '2 dl grädde', '1000g mospotatis']
         },
          {
             name: 'Schnitzel med pommes', 
-            ingredients: ['4 kycklingbröstfiléer','2 dl vetemjöl', '2 dl ströbröd', '2 ägg', '1 liter olja att fritera i', '1kg potatis'],
+            ingredients: ['4 kycklingbröstfiléer','2 dl vetemjöl', '2 dl ströbröd', '2 ägg', '1 liter olja att fritera i', '1000g potatis'],
         },
         {
             name: 'Carbonara',
@@ -94,7 +94,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Wallenbergare',
-            ingredients: ['500g kycklingfärs', '1 tsk salt', '2krm malen vitpeppar', '2 äggulor', '1 dl vispgrädde', '1kg mjölig potatis', 'frysta gröna ärtor', '150g smör']
+            ingredients: ['500g kycklingfärs', '1 tsk salt', '2krm malen vitpeppar', '2 äggulor', '1 dl vispgrädde', '1000g mjölig potatis', 'frysta gröna ärtor', '150g smör']
         },
         {
             name: 'Hamburgare',
@@ -169,4 +169,22 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
     document.getElementById('ingredientsList').classList.add('show');
 
     document.getElementById('ingredientsList').scrollIntoView({ behavior: 'smooth' });
+});
+
+// PDF Download Button
+document.getElementById('downloadPdfButton').addEventListener('click', function() {
+    const { jsPDF } = window.jspdf; // Make sure jsPDF is loaded and available
+    
+    const doc = new jsPDF();
+    doc.setFontSize(18);
+    doc.text('Ingredients List', 14, 20);  // Title of the PDF
+
+    let y = 30;  // Starting position for the list
+    document.querySelectorAll('#ingredientsList li').forEach((item, index) => {
+        doc.setFontSize(12);
+        doc.text(item.textContent, 14, y);  // Add each list item to the PDF
+        y += 10;  // Move down to the next line
+    });
+
+    doc.save('ingredients-list.pdf');  // Save the generated PDF with the filename 'ingredients-list.pdf'
 });
