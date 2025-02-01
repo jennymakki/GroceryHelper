@@ -25,6 +25,15 @@ h1 {
     font-weight: 600;
 }
 
+.step1 {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #4c7744;
+    margin-top: 1rem;
+}
+
 #recipeList {
     padding: 20px;
     max-width: 600px;
