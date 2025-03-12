@@ -298,27 +298,62 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
 
     document.getElementById('ingredientsList').innerHTML = ingredientsHTML;
 
-    // Add fade-in effect
     document.getElementById('ingredientsList').classList.add('show');
 
     document.getElementById('ingredientsList').scrollIntoView({ behavior: 'smooth' });
 });
 
+document.getElementById('copyListButton').addEventListener('click', function() {
+    let listItems = document.querySelectorAll('#ingredientsList li');
+    let textToCopy = Array.from(listItems).map(item => item.textContent).join('\n');
 
-// PDF Download Button
-document.getElementById('downloadPdfButton').addEventListener('click', function() {
-    const { jsPDF } = window.jspdf; // Make sure jsPDF is loaded and available
-    
-    const doc = new jsPDF();
-    doc.setFontSize(18);
-    doc.text('Ingredients List', 14, 20);  // Title of the PDF
-
-    let y = 30;  // Starting position for the list
-    document.querySelectorAll('#ingredientsList li').forEach((item, index) => {
-        doc.setFontSize(12);
-        doc.text(item.textContent, 14, y);  // Add each list item to the PDF
-        y += 10;  // Move down to the next line
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        showToast('Listan har kopierats!');
+    }).catch(err => {
+        console.error('Misslyckades med att kopiera:', err);
     });
+});
 
-    doc.save('ingredients-list.pdf');  // Save the generated PDF with the filename 'ingredients-list.pdf'
+document.getElementById('addItemButton').addEventListener('click', function() {
+    let input = document.getElementById('newItem');
+    let newItemText = input.value.trim();
+
+    if (newItemText !== '') {
+        let newItem = document.createElement('li');
+        newItem.textContent = newItemText;
+        document.getElementById('ingredientsList').appendChild(newItem);
+        
+        input.value = '';
+        showToast('Ingrediens tillagd!');
+    } else {
+        showToast('Skriv något först!');
+    }
+});
+
+function showToast(message) {
+    let toast = document.createElement('div');
+    toast.textContent = message;
+    toast.className = 'toast-message';
+    
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 100); 
+
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300); 
+    }, 2000); 
+}
+
+document.getElementById('viewIngredientsButton').addEventListener('click', function() {
+    
+    const moreItems = document.getElementById('moreItems');
+    
+    if (moreItems.style.display === 'none' || moreItems.style.display === '') {
+        moreItems.style.display = 'block'; 
+    } else {
+        moreItems.style.display = 'none'; 
+    }
 });
