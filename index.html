@@ -77,8 +77,29 @@
       ><br />
       <label
         ><input type="checkbox" id="recipe27" /> Chicken drumsticks med
-        pommes</label
+        pommes<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal27"></i></label
       ><br />
+
+      <!-- Modal för receptet -->
+<div id="recipeModal27" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" data-modal="recipeModal27">&times;</span>
+    <h2>Chicken drumsticks med pommes</h2>
+    <h3>Ingredienser</h3>
+    <ul>
+      <li>1 förpackning frysta drumsticks</li>
+      <li>500g pommes</li>
+      <li>Olja, salt, peppar, och kryddor efter smak</li>
+    </ul>
+    <h3>Recept</h3>
+    <p class="recipe__instructions">
+      1. Förvärm ugnen till 200°C (anpassa temperatur till instruktionerna på påsarna).<br>
+      2. Lägg kycklingklubborna och potatisen på en bakplåt.<br>
+      3. Grilla i ugnen i ca 30 minuter tills kycklingen är genomstekt och potatisen är mjuk och krispig.<br>
+    </p>
+  </div>
+</div>
+
       <label
         ><input type="checkbox" id="recipe34" /> Chili con carne<a
           href="https://www.ica.se/recept/chili-con-carne-424/"
@@ -141,14 +162,40 @@
 
       <p class="alphabet">F</p>
       <label
-        ><input type="checkbox" id="recipe13" /> Fetaostbiffar<a
+        ><input type="checkbox" id="recipe13" /> Fetaostbiffar med grekisk sallad, klyftpotatis och tzatsiki<a
           href="https://www.zeta.nu/recept/fetaostbiffar/"
+          target="_blank"
+          class="viewRecipeLink"
+          ><i class="fas fa-external-link-alt"></i></a><a
+          href="https://ingmar.app/blogg/klyftpotatis/"
           target="_blank"
           class="viewRecipeLink"
           ><i class="fas fa-external-link-alt"></i></a></label
       ><br />
-      <label><input type="checkbox" id="recipe31" /> Fish and chips</label
-      ><br />
+      <label>
+        <input type="checkbox" id="recipe31" /> Fish and chips
+        <i class="fas fa-info-circle recipe-icon" data-modal="recipeModal31"></i>
+      </label>
+      <br />
+      <div id="recipeModal31" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal31">&times;</span>
+          <h2>Fish and Chips</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>1 förpackning frysta fiskpanetter</li>
+            <li>1 förpackning pommes</li>
+            <li>Olja, salt, peppar, och vinäger</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Sätt ugnen på cirka 200grader (justera efter instruktioner på förpackningen). <br>
+            2. Lägg panetterna och pommesen på en plåt.<br>
+            3. Tillaga i cirka 20 minuter.<br>
+          </p>
+        </div>
+      </div>
+
       <label
         ><input type="checkbox" id="recipe59" /> Fläskytterfilégryta med
         soltorkade tomater<a
@@ -169,13 +216,58 @@
       ><br />
 
       <p class="alphabet">H</p>
-      <label><input type="checkbox" id="recipe25" /> Hamburgare</label><br />
-
+      <label><input type="checkbox" id="recipe25" /> Hamburgare<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal25"></i></label><br />
+      <div id="recipeModal25" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal25">&times;</span>
+          <h2>Hamburgare</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>4 hamburgare</li>
+            <li>500g pommes</li>
+            <li>4 hamburgarebröd</li>
+            <li>inlagd gurka</li>
+            <li>1 dl majonnäs</li>
+            <li>1 dl bbq-sås</li>
+            <li>4 skivor hamburgarost</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Sätt ugnen på cirka 200grader (justera efter instruktioner på förpackningen). <br>
+            2. Lägg pommesen på en plåt och tillaga i ugnen i cirka 20 minuter.<br>
+            3. Stek hamburgarna och lägg på osten när de är klara.<br>
+            4. Dela hamburgarbröden och rosta i ugnen i cirka 2 minuter när pommesen nästan är klar.<br>
+            5. Sätt ihop hamburgarna med gurkan, majonnäs och bbq-sås och servera med pommesen.<br>
+          </p>
+        </div>
+      </div>
       <p class="alphabet">I</p>
       <p class="alphabet">J</p>
       <p class="alphabet">K</p>
-      <label><input type="checkbox" id="recipe14" /> Kebab</label><br />
-
+      <label><input type="checkbox" id="recipe14" /> Kebab<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal14"></i></label><br />
+      <div id="recipeModal14" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal14">&times;</span>
+          <h2>Kebab</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>1 förpackning kebabkött (från Schysst käk) </li>
+            <li>500g pommes</li>
+            <li>1 rödlök</li>
+            <li>0.5 gurka</li>
+            <li>2 tomater</li>
+            <li>1 förpackning kebabbröd</li>
+            <li>1 flaska kebabsås (från Schysst käk) </li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Lägg pommesen på en plåt och tillaga i ugnen i cirka 20 minuter. <br>
+            2. Stek kebabköttet i en stekpanna med lite olja.<br>
+            3. Skiva grönsakerna.<br>
+            4. Servera kebaben med grönsakerna, brödet, såsen och pommesen.<br>
+          </p>
+        </div>
+      </div>
       <label
         ><input type="checkbox" id="recipe5" /> Kikärtswrap med dillig
         majonnäs<a
@@ -191,8 +283,25 @@
           class="viewRecipeLink"
           ><i class="fas fa-external-link-alt"></i></a></label
       ><br />
-      <label><input type="checkbox" id="recipe26" /> Korv med bröd</label><br />
-
+      <label><input type="checkbox" id="recipe26" /> Korv med bröd<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal26"></i></label><br />
+      <div id="recipeModal26" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal26">&times;</span>
+          <h2>Korv med bröd</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>6 grillkorvar</li>
+            <li>6 korvbröd</li>
+            <li>500g pommes</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Lägg pommesen på en plåt och tillaga i ugnen i cirka 20 minuter.<br>
+            2. Stek korvarna.<br>
+            4. Servera korvarna med korvbröd, pommes och valfri topping.<br>
+          </p>
+        </div>
+      </div>
       <label
         ><input type="checkbox" id="recipe18" /> Kycklingfärsgryta<a
           href="https://www.citygross.se/f%C3%A4rs/gryta-med-svampstekt-f%C3%A4rs-r46731?portions=4"
@@ -378,9 +487,27 @@
           class="viewRecipeLink"
           ><i class="fas fa-external-link-alt"></i></a></label
       ><br />
-      <label><input type="checkbox" id="recipe19" /> Pestolax med pasta</label
+      <label><input type="checkbox" id="recipe19" /> Pestolax med pasta<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal19"></i></label
       ><br />
-
+      <div id="recipeModal19" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal19">&times;</span>
+          <h2>Pestolax med pasta</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>500g tagliatelle</li>
+            <li>200g gravad/rökt lax</li>
+            <li>100g pesto</li>
+            <li>2dl creme fraiche</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Koka tagliatellen.<br>
+            2. Blanda pesto med creme fraiche i en skål.<br>
+            3. Servera tagliatellen, pestokrämen och laxen.<br>
+          </p>
+        </div>
+      </div>
       <label
         ><input type="checkbox" id="recipe8" /> Pizza<a
           href="https://www.ica.se/recept/pizzadeg-258023/"
@@ -432,12 +559,56 @@
         ></a> </label
       ><br />
 
-      <label><input type="checkbox" id="recipe21" /> Schnitzel med pommes</label
+      <label><input type="checkbox" id="recipe21" /> Schnitzel med pommes<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal21"></i></label
       ><br />
+      <div id="recipeModal21" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal21">&times;</span>
+          <h2>Schnitzel med pommes</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>4 kycklingbröstfiléer</li>
+            <li>2 dl vetemjöl</li>
+            <li>2 ägg</li>
+            <li>2 dl ströbröd</li>
+            <li>1000 g potatis</li>
+            <li>1 liter olja att fritera i</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Hetta upp oljan i en kastrull. <br>
+            2. Skär potatisarna i stavar och börja fritera i omgångar.<br>
+            3. Skär kycklingfiléerna så de blir tunnare. <br>
+            4. Doppa filéerna i mjöl, sedan i uppvispat ägg och slutligen i ströbröd.<br>
+            5. Stek filéerna gyllenbrun i olja på medelhög värme.<br>
+            6. Servera schnitzeln med pommes och förslagsvis majonnäs och bbq-sås.<br>
+          </p>
+        </div>
+      </div>
       <label
         ><input type="checkbox" id="recipe38" /> Stuvade makaroner med
-        falukorv</label
+        falukorv<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal38"></i></label
       ><br />
+      <div id="recipeModal38" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal38">&times;</span>
+          <h2>Stuvade makaroner med falukorv</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>1 liter mjölk</li>
+            <li>5 dl makaroner</li>
+            <li>500 g falukorv</li>
+            <li>Olja, salt, och peppar</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Koka upp mjölken.<br>
+            2. Häll i makaronerna och låt koka tills makaronerna är mjuka, ungefär 20 minuter. Salta och peppra efter smak<br>
+            3. Skär upp korvven och stek i lite olja.<br>
+            4. Servera korven med makaronerna.<br>
+          </p>
+        </div>
+      </div>
       <label
         ><input type="checkbox" id="recipe41" /> Sushi<a
           href="https://www.koket.se/hemgjord-sushi-jennie-walldens-recept"
@@ -448,7 +619,31 @@
       ><br />
 
       <p class="alphabet">T</p>
-      <label><input type="checkbox" id="recipe2" /> Tacos</label><br />
+      <label><input type="checkbox" id="recipe2" /> Tacos<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal2"></i></label><br />
+      <div id="recipeModal2" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal2">&times;</span>
+          <h2>Tacos</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>1 förpackning tacobröd</li>
+            <li>500 g nötfärs</li>
+            <li>1 gurka</li>
+            <li>1 paprika</li>
+            <li>3 avokado</li>
+            <li>1 påse tacokrydda</li>
+            <li>300 g riven ost</li>
+            <li>1 burk tacosås</li>
+            <li>2 dl creme fraiche</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Stek färsen i en stekpanna och tillsätt 1 dl vatten och tacokryddan.<br>
+            2. Skär upp alla grönsaker<br>
+            3. Servera tacofärsen med brödet, grönsakerna, osten, såsen och creme fraichen.<br>
+          </p>
+        </div>
+      </div>
       <label
         ><input type="checkbox" id="recipe37" /> Tacopaj<a
           href="https://www.mathem.se/se/recipes/2154-arla-jattegod-tacopaj/"
@@ -460,8 +655,29 @@
 
       <label
         ><input type="checkbox" id="recipe32" /> Tikka masala med
-        naanbröd</label
+        naanbröd<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal32"></i></label
       ><br />
+      <div id="recipeModal32" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal32">&times;</span>
+          <h2>Tikka masala med naanbröd</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>1 förpackning färdig kyckling</li>
+            <li>1 burk tikka masala</li>
+            <li>3 dl ris</li>
+            <li>1 påse naanbröd</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Värm ugnen till cirka 200 grader. <br>
+            2. Koka upp riset. <br>
+            2. Värm upp såsen i en kastrull och tillägg kycklingen. <br>
+            2. Tillaga naanbrödet i ugnen.<br>
+            3. Servera tikka masala med ris och naanbröd.<br>
+          </p>
+        </div>
+      </div>
 
       <label
         ><input type="checkbox" id="recipe6" /> Tuna Melt<a
@@ -470,8 +686,29 @@
           class="viewRecipeLink"
           ><i class="fas fa-external-link-alt"></i></a></label
       ><br />
-      <label><input type="checkbox" id="recipe33" /> Tunnbrödsrulle</label
+      <label><input type="checkbox" id="recipe33" /> Tunnbrödsrulle<i class="fas fa-info-circle recipe-icon" data-modal="recipeModal33"></i></label
       ><br />
+      <div id="recipeModal33" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" data-modal="recipeModal33">&times;</span>
+          <h2>Tunnbrödsrulle</h2>
+          <h3>Ingredienser</h3>
+          <ul>
+            <li>4 grillkorvar</li>
+            <li>4 tunnbröd</li>
+            <li>200g räksallad</li>
+            <li>2 msk rostad lök</li>
+            <li>4 portioner pulvermos</li>
+            <li>Olja, salt, peppar, ketchup, och senap</li>
+          </ul>
+          <h3>Recept</h3>
+          <p class="recipe__instructions">
+            1. Tillaga pulvermoset.<br>
+            2. Stek korvarna.<br>
+            3. Bygg ihop rullen genom att bre på mos på brödet, därefter lägga i korven, sedan toppa med räksallad, ketchup, senap och rostad lök. Stäng sedan rullen och använd grillfolie för att hålla ihop om det behövs.<br>
+          </p>
+        </div>
+      </div>
       <label
         ><input type="checkbox" id="recipe58" /> Turkisk kebab med tomatsallad<a
           href="https://www.ica.se/recept/turkisk-kebab-med-tomatsallad-427072/"

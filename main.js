@@ -6,7 +6,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Tacos',
-            ingredients: ['1 förpackning tacobröd', '500 g nötfärs', '1 gurka', '1 paprika', '300 g Riven ost', '1 burk tacosås', '1 påse tacokrydda', '1 avokado']
+            ingredients: ['1 förpackning tacobröd', '500 g nötfärs', '1 gurka', '1 paprika', '300 g Riven ost', '1 burk tacosås', '1 påse tacokrydda', '3 avokado', '2 dl creme fraiche']
         },
       {
             name: 'Pulled Pork',
@@ -54,7 +54,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Kebab',
-            ingredients: ['En förpacking kebabkött', '1 rödlök', '0.5 gurka', '2 tomat', '1 förpackning kebabbröd', '1 flaska kebabsås']
+            ingredients: ['1 förpacking kebabkött (från Schysst käk)', '1 rödlök', '0.5 gurka', '2 tomat', '1 förpackning kebabbröd', '1 flaska kebabsås', '500 g pommes']
         },
         {
             name: 'Club Sandwich',
@@ -94,7 +94,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Wallenbergare',
-            ingredients: ['500 g kycklingfärs', '1 tsk salt', '2 krm malen vitpeppar', '2 äggulor', '1 dl vispgrädde', '1000 g mjölig potatis', '1 förpackning frysta gröna ärtor', '150 g smör']
+            ingredients: ['500 g kycklingfärs', '1 tsk salt', '2 krm malen vitpeppar', '2 äggulor', '1 dl vispgrädde', '1000 g mospotatis', '1 förpackning frysta gröna ärtor', '150 g smör']
         },
         {
             name: 'Hamburgare',
@@ -106,7 +106,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Chicken drumsticks med pommes',
-            ingredients: ['Chicken drumsticks (frysta)', '500 g pommes']
+            ingredients: ['1 förpackning chicken drumsticks (frysta)', '500 g pommes']
         },
         {
             name: 'Entrecôte med potatisgratäng',
@@ -353,7 +353,28 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
     
     if (moreItems.style.display === 'none' || moreItems.style.display === '') {
         moreItems.style.display = 'block'; 
-    } else {
-        moreItems.style.display = 'none'; 
-    }
+    } 
 });
+
+// Lyssna på alla klick på info-ikoner
+document.querySelectorAll(".recipe-icon").forEach(icon => {
+    icon.addEventListener("click", function() {
+      let modalId = this.getAttribute("data-modal");
+      document.getElementById(modalId).style.display = "block";
+    });
+  });
+  
+  // Hantera stängning av modaler
+  document.querySelectorAll(".close-btn").forEach(btn => {
+    btn.addEventListener("click", function() {
+      let modalId = this.getAttribute("data-modal");
+      document.getElementById(modalId).style.display = "none";
+    });
+  });
+  
+  // Stäng modalen om användaren klickar utanför modal-innehållet
+  window.addEventListener("click", function(event) {
+    if (event.target.classList.contains("modal")) {
+      event.target.style.display = "none";
+    }
+  });
