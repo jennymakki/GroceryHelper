@@ -25,7 +25,8 @@ h1 {
     font-weight: 600;
 }
 
-.step1 {
+.step1,
+.introduction {
     font-size: 1.5rem;
     width: 100%;
     padding: 0;
@@ -278,3 +279,26 @@ label:hover {
   .close-btn:hover {
     color: red;
   }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.navigation__item {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.navigation__item:hover {
+    color: #071d00
+}
+
+.holidays,
+.baking {
+    margin: 2rem;
+}

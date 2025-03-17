@@ -86,7 +86,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Carbonara',
-            ingredients: ['1 förpackning tärnad Guanciale', '2 vitlöksklyftor', '500 g spagetti', '4 äggulor', '85 g riven parmesan']
+            ingredients: ['1 förpackning tärnad Guanciale', '2 vitlöksklyftor', '500 g spagetti', '4 ägg', '85 g riven parmesan']
         },
          {
             name: 'Lasagne',
@@ -94,7 +94,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Wallenbergare',
-            ingredients: ['500 g kycklingfärs', '1 tsk salt', '2 krm malen vitpeppar', '2 äggulor', '1 dl vispgrädde', '1000 g mospotatis', '1 förpackning frysta gröna ärtor', '150 g smör']
+            ingredients: ['500 g kycklingfärs', '1 tsk salt', '2 krm malen vitpeppar', '2 ägg', '1 dl vispgrädde', '1000 g mospotatis', '1 förpackning frysta gröna ärtor', '150 g smör']
         },
         {
             name: 'Hamburgare',
@@ -210,7 +210,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Kycklingsoppa',
-            ingredients: ['700 g kycklinglår med ben', '1 dl bladpersilja', '1 krm vitpepparkorn', '2 lagerblad', '3 potatisar', '2 gullök', '1.5 morot', '150 g rotselleri', '1 palsternacka', '150 g kålrot', '1 purjolök']
+            ingredients: ['700 g kycklinglår med ben', '1 dl bladpersilja', '1 krm vitpepparkorn', '2 lagerblad', '200 g potatis', '2 gullök', '1.5 morot', '150 g rotselleri', '1 palsternacka', '150 g kålrot', '1 purjolök']
         },
         {
             name: 'Linsgryta',
@@ -243,6 +243,26 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         {
             name: 'Kycklingfärsgryta med tacokrydda',
             ingredients: ['400 g potatis', '300 g morötter', '0.5 purjolök', '0.5 rödlök', '500 g kycklingfärs', '40 g tacokrydda', '1 dl matlagningsgrädde', '50 g färskost', '390 g krossad tomat', '1 avokado', '250 g körsbärstomater']
+        },
+
+        {
+            name: 'Kylskåpsplåt',
+            ingredients: ['1 morot', '1 palsternacka', '100 g potatis', '1 rödlök', '2 vitlöksklyftor', '1 förpackning färdig kyckling', '1 påse tacomix', '1 dl majs', '50 g riven ost', 'tacosås', '2 dl gräddfil']
+        },
+
+        {
+            name: 'Musslor i vitt vin',
+            ingredients: ['1 kg blåmusslor', '4 schalottenlök', '2 vitlöksklyftor', '1 kruka persilja', '25 g smör', '2.5 dl vitt vin', '1 baugette']
+        },
+
+        {
+            name: 'Bakad potatis toppad med skagenröra',
+            ingredients: ['4 bakpotatisar', '25 g smör', '200 g skagenröra']
+        },
+
+        {
+            name: 'Oxfilé med hasselbackspotatis',
+            ingredients: ['800 g potatis', '50 g smör', '2 msk ströbröd', '400 g oxfilé', 'en förpackning bearneisesås']
         }
 
     ];
