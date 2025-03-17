@@ -36,7 +36,8 @@ h1 {
     text-align: center;
 }
 
-#recipeList {
+#recipeList,
+.baking {
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
@@ -300,5 +301,7 @@ label:hover {
 
 .holidays,
 .baking {
-    margin: 2rem;
+    margin-left: auto;
+    margin-left: auto;
+    width: 60%;
 }
