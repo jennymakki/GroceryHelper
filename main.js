@@ -10,11 +10,11 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
       {
             name: 'Pulled Pork',
-            ingredients: ['1000 g fläskkarré', '1 msk malen spiskummin', '1 msk rökt paprikapuler', '1 tsk chiliflakes', '0.5 tsk chilipulver', '2 tsk salt,', '1 msk socker', '3 vitlöksklyfta', '33 cl mörk öl', '1 dl bbq-sås']
+            ingredients: ['1000 g fläskkarré', '1 msk malen spiskummin', '1 msk rökt paprikapuler', '1 tsk chiliflakes', '0.5 tsk chilipulver', '2 tsk salt,', '1 msk socker', '3 vitlöksklyftor', '33 cl mörk öl', '1 dl bbq-sås']
         },
         {
             name: 'Röd pestokyckling med oliver',
-            ingredients: ['1000 g kycklingfilé', '1 gullök', '4 dl grädde', '100 g röd pesto', '2 vitlöksklyfta', '1 dl urkärnade oliver', '500 g spagetti' ]
+            ingredients: ['1000 g kycklingfilé', '1 gullök', '4 dl grädde', '100 g röd pesto', '2 vitlöksklyftor', '1 dl urkärnade oliver', '500 g spagetti' ]
         },
          {
             name: 'Kikärtswrap med dillig majonnässås',
@@ -30,15 +30,15 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
          {
             name: 'Pizza',
-            ingredients: ['500 g krossade tomater', '2 msk olivolja', '1 vitlöksklyfta', '1 tsk basilika', '500 g riven ost', '50 g färsk blå jäst', '2 msk olja', '0.5 msk salt', '550 g vetemjöl', '100 g salamiskivor']
+            ingredients: ['500 g krossade tomater', '2 msk olivolja', '1 vitlöksklyftor', '1 tsk basilika', '500 g riven ost', '50 g färsk blå jäst', '2 msk olja', '0.5 msk salt', '550 g vetemjöl', '100 g salamiskivor']
         },
          {
             name: 'Pan Pizza',
-            ingredients: ['400 g vetemjöl', '4 g torrjäst', '2 tsk olivolja', '500 g krossade tomater', '2 msk olivolja', '1 vitlöksklyfta', '1 tsk basilika', '500 g riven ost', '100 g salamiskivor']
+            ingredients: ['400 g vetemjöl', '4 g torrjäst', '2 tsk olivolja', '500 g krossade tomater', '2 msk olivolja', '1 vitlöksklyftor', '1 tsk basilika', '500 g riven ost', '100 g salamiskivor']
         },
      {
             name: 'Garlic Butter Roast Chicken',
-            ingredients: ['1 hel kyckling', '1 gullök', 'färsk timjan', '50 g smör', '1 msk olivolja', '2 vitlöksklyfta', '1 tsk salt', 'sötpotatispommes (frysta)']
+            ingredients: ['1 hel kyckling', '1 gullök', 'färsk timjan', '50 g smör', '1 msk olivolja', '2 vitlöksklyftor', '1 tsk salt', 'sötpotatispommes (frysta)']
         },
         {
             name: 'Chorizopasta',
@@ -174,11 +174,11 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Cannelloni med salsicciafyllning',
-            ingredients: ['300 g pasta cannelloni', '2 vitlöksklyfta', '500 g mascarpone', '80 g ost', '600 g salsicciafärs', '500 g passerade tomater', '2 tsk torkad timjan', '0.5 dl olivolja', '0.5 dl vitt vin', '1 kruka färsk basilika', '2 mozzarellaostar']
+            ingredients: ['300 g pasta cannelloni', '2 vitlöksklyftor', '500 g mascarpone', '80 g ost', '600 g salsicciafärs', '500 g passerade tomater', '2 tsk torkad timjan', '0.5 dl olivolja', '0.5 dl vitt vin', '1 kruka färsk basilika', '2 mozzarellaostar']
         },
         {
             name: 'Kreolsk gryta',
-            ingredients: ['500 g fläskfilé', '240 g kabanoss', '2 röda paprika', '1 vitlöksklyfta', '5 dl vispgrädde', '2dl köttbuljong', '1 dl cornichons', '1 dl urkärnade svarta oliver', '1 dl syltlök', '3 tsk majsstärkelse', '1 kruka persilja', '6 dl ris']
+            ingredients: ['500 g fläskfilé', '240 g kabanoss', '2 röda paprika', '1 vitlöksklyftor', '5 dl vispgrädde', '2dl köttbuljong', '1 dl cornichons', '1 dl urkärnade svarta oliver', '1 dl syltlök', '3 tsk majsstärkelse', '1 kruka persilja', '6 dl ris']
         },
         {
             name: 'Broccolisoppa',
@@ -186,11 +186,11 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Saffranskryddad fisksoppa med lax och torsk',
-            ingredients: ['2.5 dl vitt vin', '140 g handskalade räkor', '1 dl creme fraiche', '0.5 g saffran', '3 msk fiskfond', '1 tsk basilika', '1 tsk timjan', '300 g laxfilé', '370 g torskfilé', '1 purjolök', '2.5 dl matlagningsgrädde', '1 vitlöksklyfta', '1 dl majonnäs']
+            ingredients: ['2.5 dl vitt vin', '140 g handskalade räkor', '1 dl creme fraiche', '0.5 g saffran', '3 msk fiskfond', '1 tsk basilika', '1 tsk timjan', '300 g laxfilé', '370 g torskfilé', '1 purjolök', '2.5 dl matlagningsgrädde', '1 vitlöksklyftor', '1 dl majonnäs']
         },
         {
             name: 'Boeuf Bourguignon med potatismos',
-            ingredients: ['1000 g högrev', '200 g rökt sidfläsk', '2 schalottenlök', '3 vitlöksklyfta', '70 g morötter', '1.5 msk tomatpuré', '100 g smör', '2 msk vetemjöl', '5 dl rödvin', '2 msk kalvfond', '0.5 tsk timjan', '3 lagerblad', '1 kg mospotatis', '250 g steklök', '400 g färska chaminjoner']
+            ingredients: ['1000 g högrev', '200 g rökt sidfläsk', '2 schalottenlök', '3 vitlöksklyftor', '70 g morötter', '1.5 msk tomatpuré', '100 g smör', '2 msk vetemjöl', '5 dl rödvin', '2 msk kalvfond', '0.5 tsk timjan', '3 lagerblad', '1 kg mospotatis', '250 g steklök', '400 g färska chaminjoner']
         },
         {
             name: 'Morotsplättar med fetaoströra och zucchinisallad',
@@ -202,11 +202,11 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Lasagnette',
-            ingredients: ['1 gullök', '2 selleristjälkar', '2 morötter', '3 vitlöksklyfta', '500 g nötfärs', '1 msk basilika', '1 msk oregano', '400 g krossade tomater', '400 g passerade tomater', '300 g lasagnette-pasta eller fjärilspasta', '2 dl creme fraiche', '200 g riven ost']
+            ingredients: ['1 gullök', '2 selleristjälkar', '2 morötter', '3 vitlöksklyftor', '500 g nötfärs', '1 msk basilika', '1 msk oregano', '400 g krossade tomater', '400 g passerade tomater', '300 g lasagnette-pasta eller fjärilspasta', '2 dl creme fraiche', '200 g riven ost']
         },
         {
             name: 'Yakitorikyckling med ris',
-            ingredients: ['2 msk japansk soja', '1 vitlöksklyfta', '2 msk mirin', '1 msk ljus risvinäger', '1 msk ingefära', '1 dl farinsocker', '3 tsk majsstärkelse', '400 g kycklinglårfilé utan ben', '2 st salladslök', '1 msk sesamfrön', '3 dl ris'],
+            ingredients: ['2 msk japansk soja', '1 vitlöksklyftor', '2 msk mirin', '1 msk ljus risvinäger', '1 msk ingefära', '1 dl farinsocker', '3 tsk majsstärkelse', '400 g kycklinglårfilé utan ben', '2 st salladslök', '1 msk sesamfrön', '3 dl ris'],
         },
         {
             name: 'Kycklingsoppa',
@@ -214,7 +214,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Linsgryta',
-            ingredients: ['1 gullök', '2 vitlöksklyfta', '2 morötter', '1 tsk sambal oelek', '1 msk curry', '2 msk tomatpuré', '1 burk krossade tomater','2 msk grönsaksbuljong', '2.5 dl creme fraiche', '2 dl röda linser']
+            ingredients: ['1 gullök', '2 vitlöksklyftor', '2 morötter', '1 tsk sambal oelek', '1 msk curry', '2 msk tomatpuré', '1 burk krossade tomater','2 msk grönsaksbuljong', '2.5 dl creme fraiche', '2 dl röda linser']
         },
         {
             name: 'Lax med teriyakisås och nudlar',
@@ -226,11 +226,11 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Citronpasta med smörstekt fisk',
-            ingredients: ['340 g tagliatelle', '2 vitlöksklyfta', '2.5 dl vispgrädde', '1 citron', '500 g torsk']
+            ingredients: ['340 g tagliatelle', '2 vitlöksklyftor', '2.5 dl vispgrädde', '1 citron', '500 g torsk']
         },
         {
             name: 'Turkisk kebab med tomatsallad',
-            ingredients: ['500 g nötfärs', '2 dl matyoghurt', '1 ägg', '1 vitlöksklyfta', '1 tsk spiskummin', '4 tomater', '1 rödlök', '3 msk hackad mynta', '2 msk olivolja', '1 msk citronsaft', '300 g bulgur']
+            ingredients: ['500 g nötfärs', '2 dl matyoghurt', '1 ägg', '1 vitlöksklyftor', '1 tsk spiskummin', '4 tomater', '1 rödlök', '3 msk hackad mynta', '2 msk olivolja', '1 msk citronsaft', '300 g bulgur']
         },
         {
             name: 'Fläskytterfilégryta med soltorkade tomater',
@@ -238,7 +238,7 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         },
         {
             name: 'Kycklingpasta med soltorkade tomater',
-            ingredients: ['340 g tagliatelle', '120 g soltorkade tomater', '550 g kycklingfilé', '2 vitlöksklyfta', '3 dl vispgrädde', '25 g basilika', '65 g bladspenat']
+            ingredients: ['340 g tagliatelle', '120 g soltorkade tomater', '550 g kycklingfilé', '2 vitlöksklyftor', '3 dl vispgrädde', '25 g basilika', '65 g bladspenat']
         },
         {
             name: 'Kycklingfärsgryta med tacokrydda',
@@ -263,6 +263,26 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         {
             name: 'Oxfilé med hasselbackspotatis',
             ingredients: ['800 g potatis', '50 g smör', '2 msk ströbröd', '400 g oxfilé', 'en förpackning bearneisesås']
+        },
+
+        {
+            name: 'Gryta med ölkorv och örter',
+            ingredients: ['600 g skinkstek', '100 g ölkorv', '2 rödlök', '1 msk tomatpuré', '2 msk smör', '1 dl rödvin', '1 msk kinesisk soja', '1 msk kalvfond', '3 dl vispgrädde', '1 tsk oregano', '250 g brysselkål', '800 g potatis', '25 g smör', '1 dl mjölk', '1 dl riven parmesan']
+        }, 
+
+        {
+            name: 'Shepherds pie',
+            ingredients: ['1000 g potatis', '2 dl matlagningsgrädde', '1 ägg', '50 g smör', '1 purjolök', '200 g riven cheddarost', '450 g köttfärs', '2 msk worcestershiresås', '1 msk soja', '1 ägg'],
+        },
+
+        {
+            name: 'Broccoli Casserole',
+            ingredients: ['1 burk krämig svampsoppa', '2.5 dl gräddfil', '3.5 dl riven cheddarost', '1 gullök', '1 kg fryst broccoli']
+        },
+
+        {
+            name: 'Sallad med varmrökt lax, ägg, avokado och bulgur',
+            ingredients: ['300 g varmrökt lax', '3 avokado', '3 ägg', '2 dl bulgur', 'en påse bladsallad', '1 dl majonnäs, 2 vitlöksklyftor', '1 dl matyogurt']
         }
 
     ];
