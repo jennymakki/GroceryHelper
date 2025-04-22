@@ -283,6 +283,21 @@ document.getElementById('viewIngredientsButton').addEventListener('click', funct
         {
             name: 'Sallad med varmrökt lax, ägg, avokado och bulgur',
             ingredients: ['300 g varmrökt lax', '3 avokado', '3 ägg', '2 dl bulgur', 'en påse bladsallad', '1 dl majonnäs, 2 vitlöksklyftor', '1 dl matyogurt']
+        },
+
+        {
+            name: 'Mormors köttbullar',
+            ingredients: ['500 g köttfärs', '0.5 dl ströbröd', '1.5 dl vispgrädde', '1.2 kg potatis', '2 tsk salt', '1 tsk socker', '2 krm vitpeppar', 'kryddpeppar', '1 ägg', '0.5 köttbuljongtärning', '2 msk vetemjöl', '1.5 tsk japansk soja']
+        },
+
+        {
+            name: 'Thai Red Curry Chicken Soup', 
+            ingredients: ['1 tsk kokosolja', '1 gullök', '1 röd chili', '3 vitlöksklyftor', '2 msk färsk ingefära', '115 ml röd curry paste', '1 burk kokosmjölk', '2 kycklingbuljongtärningar', '1 kg kycklinglårfilé', '3 msk fisksås', '1 lime', 'färsk koriander', 'färsk thai basilika', '400 g risnudlar']
+        },
+
+        {
+            name: 'Chiligryta',
+            ingredients: ['1 kg högrev', '200 g benmärg', '50 g smör', '3 stora gullök', '10 vitlöksklyftor', '450 g spetspaprika', '2 torkad chipotle', '1 röd chili', '1 habanero', '3 Guinness', '1 köttbuljongtärning', '2 msk kinesisk soja', '0.5 msk salt', 'torkad chilikrydda', '1 msk worcestershiresås', '2 msk oxfond', '300 g nachochips', '5 avokado', '2 dl creme fraiche']
         }
 
     ];
